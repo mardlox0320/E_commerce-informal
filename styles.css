@@ -1,0 +1,175 @@
+#log {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+}
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 1%;
+}
+#productList img {
+    width: 4rem;
+    height: 5rem;
+    object-fit: cover; 
+    border-radius: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+}
+
+#productList li {
+    list-style: none; 
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    background-color: #dfdada;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    overflow: hidden;
+}
+#addform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+#products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+#productForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+input {
+    padding: 0.5rem;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#logout {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button {
+    transition: 0.3s;
+    padding: 0.5rem 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #218838;
+    transform: translatex(-0.7px);
+}
+#carrinho {
+    position: fixed;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 40%;
+    font-size: 1.5rem;
+    transition: background-color 0.3s, transform 0.3s;
+    border: black solid 1px;
+}
+#carrinho:hover {
+    background-color: #0056b3;
+}
+#addToCartBtn {
+    background-color: #000000;
+    padding: 1.5%;
+}
+#Carrinho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    gap: 4rem;
+}
+#fimpedido {
+    display: flex;
+    bottom: 5%;
+    gap: 2rem;
+}
+#fimpedido button {
+    transition: 0.6s;
+    font-size: large;
+    background-color: #007bff;
+    color: rgb(255, 255, 255);
+    height: 100%;
+    width: 50%;
+    padding: 5%;
+}
+#fimpedido button:hover {
+    background-color: #0056b3;
+    transform: translatex(-1px);
+}
+#listaprodut {
+    max-width: 110%;
+    margin: 0 auto;
+    padding: 1.5625rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr, 1fr));
+    gap: 1.5625rem;
+    grid-auto-rows: min-content;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+}
+#cartList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 4rem;
+}
+#cartList li {
+    list-style: none; 
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    background-color: #e7caca;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    overflow: hidden;
+}
+#historico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 2rem;
+}
+#historico li {
+    list-style: none; 
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    background-color: #1d530d;
+    color: white;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    overflow: hidden;
+}

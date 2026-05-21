@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+</head>
+<body>
+    <div id="log" style="display: none;">
+    <h1 id="h1login">login</h1><br>
+        <div class="form-container">
+            <form id="loginForm">
+                <input type="text" id="name" placeholder="Nome" required><br>
+                <input type="email" id="username" placeholder="Email" required><br>
+                <input type="password" id="password" placeholder="Password" required><br>
+                <button type="button" id="loginButton" onclick="login()">Login</button><br>
+                <button id="mudar" onclick="changecreate()">não tem uma conta? criar conta</button>
+            </form>
+        </div>
+    </div>
+        <section id="main" style="display: none;">
+            <h1>Mercadinho são joão</h1>
+            <div id="addform">
+            <form id="productForm">
+                <h2>Adicionar Produto</h2>
+                <input type="text" id="productName" placeholder="Nome do produto" required><br>
+                <input type="text" id="productDescription" placeholder="Descrição do produto" required><br>
+                <input type="number" id="productPrice" placeholder="Preço do produto" required><br>
+                <input type="number" id="productQuantity" placeholder="Estoque" required><br>
+                <input type="text" id="productImageURL" placeholder="URL da Imagem" required><br>
+                <button type="button" onclick="addProduct()">Adicionar Produto</button>
+            </form>
+            </div>
+            <div id="products">
+                <h1><Strong>Produtos</Strong></h1>
+            <div id="listaprodut">
+                <ol id="productList"> 
+                </ol>
+            </div>
+            </div>
+            <div id="carrinho">
+                <button type="button" onclick="showCart()" id="carrinho">Acessar carrinho🛒</button>
+            </div>
+            <div>
+            <footer>
+             <button onclick="logout()" id="logout">Sair(Log out)</button>
+                <p>&copy; 2026 Mercadinho são joão. Todos os direitos reservados.</p>
+            </footer>
+            </div>
+        </section>
+    <section id="Carrinho" style="display: none;">
+        <h1>Carrinho de Compras</h1>
+        <ul id="cartList"></ul> 
+        <h2>Histórico de Compras</h2>
+        <ul id="historico"></ul>
+        <div id="fimpedido">
+            <h2 id="total"></h2>
+        <button onclick="voltarParaLoja()">Voltar para a Loja</button>
+        <button onclick="finalizarPedido()" style="background-color: green; color: white;">Finalizar Pedido</button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
