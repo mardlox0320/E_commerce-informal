@@ -1,4 +1,4 @@
-const API = "https://localhost:7067";
+const API = "https://api-e-commerce-informal-1.onrender.com";
 const loginbtn = document.getElementById("loginButton")
 const email = document.getElementById("username")
 const password = document.getElementById("password")
